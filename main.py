@@ -1,9 +1,12 @@
 # Daniela Romaguera
 
 def encode(password):
+# this splits every character in string
     arr = [item for item in password]
+# this turns every character into int
     arr = [eval(i) for i in arr]
     new = []
+# adds 3 to every int
     for x in arr:
         x += 3
         new.append(x)
@@ -12,9 +15,12 @@ def encode(password):
 
 
 def decode(password):
+# splits every character in string
     dec = [item for item in password]
+# turns every character into int
     dec = [eval(i) for i in dec]
     new = []
+# subtracts 3 to every int
     for x in dec:
         x -= 3
         new.append(x)
